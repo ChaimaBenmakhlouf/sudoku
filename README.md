@@ -16,9 +16,9 @@ it's a project that resolve sudoku
 
 - In the file sudoku.php, I commented the last "if" to do tests with PhpUnit. But if you want to display the grid you have to uncommente it.
 
-- In the GridTest.php : you have to call the function solution and send a parameter.
+- In the GridTest.php : you have to call the function solveSudoku and send a parameter.
 ```
-function solution($grid);
+function solveSudoku($grid);
 ```
 In my tests, if there is a solution it will return the grid or if the sudoku is insolvent it will return false
 

@@ -17,7 +17,7 @@ class GridTest extends TestCase {
             [5,4,9,2,8,6,1,7,3],
             [1,6,7,5,9,3,2,8,4]
         ];
-        $result = solution($grid);
+        $result = solveSudoku($grid);
         $this->assertNotFalse($result);
         $this->assertEquals($result[0], [8,1,3,9,2,5,7,4,6]);
         $this->assertEquals($result[1], [9,5,6,8,4,7,3,1,2]);
@@ -47,7 +47,7 @@ class GridTest extends TestCase {
         ];
         
         
-        $result = solution($grid);
+        $result = solveSudoku($grid);
         $this->assertNotFalse($result);
         $this->assertEquals($result[0], [8,1,3,9,2,5,7,4,6]);
         $this->assertEquals($result[1], [9,5,6,8,4,7,3,1,2]);
@@ -77,7 +77,7 @@ class GridTest extends TestCase {
         ];
         
         
-        $result = solution($grid);
+        $result = solveSudoku($grid);
         $this->assertNotFalse($result);
         $this->assertEquals($result[0], [7,4,6,8,5,3,1,9,2]);
         $this->assertEquals($result[1], [2,3,8,1,9,6,7,4,5]);
@@ -109,7 +109,7 @@ class GridTest extends TestCase {
             [1,6,7,5,9,3,2,8,4]
         ];
         
-        $this->assertFalse(solution($wrongGrid));
+        $this->assertFalse(solveSudoku($wrongGrid));
         
         
     }

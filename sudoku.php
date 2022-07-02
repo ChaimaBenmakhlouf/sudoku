@@ -1,7 +1,7 @@
 <?php
 
 
-function solution($grid) {
+function solveSudoku($grid) {
     if (sudoku($grid, 0, 0)) {
         return $grid;
     }
@@ -34,7 +34,7 @@ function sudoku(&$grid, $row, $col)
     {
         
         
-        if (isSafe($grid, $row, $col, $num))
+        if (isNumberAssignable($grid, $row, $col, $num))
         {
             
             
@@ -65,7 +65,7 @@ function display($grid)
 }
 
 
-function isSafe($grid, $row, $col, $num)
+function isNumberAssignable($grid, $row, $col, $num)
 {
     
     
